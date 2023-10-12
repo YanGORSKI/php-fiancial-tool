@@ -1,0 +1,58 @@
+/* Estilo para o botão de alternância */
+.botao-verde {
+    background-color: #4CAF50; /* Verde */
+    color: #fff; /* Texto branco */
+}
+
+.botao-vermelho {
+    background-color: #FF5733; /* Vermelho */
+    color: #fff; /* Texto branco */
+}
+
+/* Estilos para o container principal */
+.container {
+    display: grid;
+    grid-template-areas:
+        "top-left top-right"
+        "bottom-left bottom-right";
+    grid-template-columns: 1fr 1fr; /* Duas colunas igualmente divididas */
+    grid-gap: 20px; /* Espaço entre as áreas */
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Estilos para cada setor */
+.top-left {
+    grid-area: top-left;
+    /* Estilos específicos para o top-left */
+}
+
+.top-right {
+    grid-area: top-right;
+    /* Estilos específicos para o top-right */
+}
+
+/* Estilos para o bottom-left (onde a tabela de entradas está localizada) */
+.bottom-left {
+    grid-area: bottom-left;
+    /* Estilos específicos para o bottom-left */
+    max-height: 50vh; /* Defina a altura máxima para 50% da altura da viewport */
+}
+
+.bottom-right {
+    grid-area: bottom-right;
+    /* Estilos específicos para o bottom-right */
+}
+
+.tabelaEntradas {
+    max-height: 50vh; /* Defina a altura máxima para 50% da altura da viewport */
+    overflow-y: auto; /* Adicione uma barra de rolagem vertical caso o conteúdo exceda a altura máxima */
+}
+
+/* Estilos para a mensagem de retorno */
+.retorno {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: right;
+}
